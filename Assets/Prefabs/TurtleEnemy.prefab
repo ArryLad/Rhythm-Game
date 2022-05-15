@@ -309,6 +309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   damage: 1
+  points: 200
   canGetStomped: 1
   canGetShot: 0
   deathParticle: {fileID: 3218823720574685591, guid: 127db449d4bc17a41868ec117be9a5cf, type: 3}

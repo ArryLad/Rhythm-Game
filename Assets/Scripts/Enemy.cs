@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
     [Header("Enemy Variables")]
     public int health = 3;
     public int damage = 1;
+    public int points;
 
     public bool canGetStomped;
     public bool canGetShot;
@@ -20,6 +21,9 @@ public class Enemy : MonoBehaviour
 
     [Header("Player")]
     public Player player;
+
+    [Header("Score")]
+    public ScoreKeeper scoreKeeper;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>(); //get player component from player
@@ -40,6 +44,8 @@ public class Enemy : MonoBehaviour
     public void Death()
     {
         player.Heal(); //heal player from enemy death
+        // CALL FUNCTION ADD SCORE * MULITPLIER TO TOTAL SCORE
+        scoreKeeper.addScore(points);
         Instantiate(deathParticle, transform.position, Quaternion.identity); //instantiate death particle
         FindObjectOfType<AudioManager>().Play("sEnemyDeath");
         Destroy(transform.parent.gameObject); //destroy parent 

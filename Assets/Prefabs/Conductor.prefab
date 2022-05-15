@@ -60,11 +60,9 @@ MonoBehaviour:
   oldBeat: 0
   spawnBeat: 0
   missCount: 0
-  window: 0.35
+  window: 0.3
   magicNumber: 0
-  saveSongPositionInBeats: 0
   curBeatSaved: 0
-  instance: {fileID: 0}
 --- !u!82 &5009608261662983584
 AudioSource:
   m_ObjectHideFlags: 0

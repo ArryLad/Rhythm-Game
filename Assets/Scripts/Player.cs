@@ -113,7 +113,7 @@ public class Player : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
        
-        if (!invincible && other.gameObject.CompareTag("Enemy")) //whe not invincible and the object colliding with is an Enemy 
+        if (!invincible && other.gameObject.tag == "Enemy") //whe not invincible and the object colliding with is an Enemy 
         {
             TakeDamage(1, maxHealth); //take damage function
             
@@ -122,13 +122,6 @@ public class Player : MonoBehaviour
             {
                 DirectionofDamage(other); //call function to knock the player away from enemy
             }
-        }
-        else if(other.gameObject.CompareTag("Reload")) //if colliding with a reload orb
-        {
-            Destroy(other.gameObject);
-            movement.maxAmmo++; //increase max ammo
-            movement.Reload(); //reload
-            FindObjectOfType<AudioManager>().Play("sReload");
         }
     }
 }

@@ -14,9 +14,13 @@ public class Bullet : MonoBehaviour
     [SerializeField] public GameObject hitGroundParticle;
     [SerializeField] public GameObject hitShellParticle;
 
-    // Start is called before the first frame update
+    [Header("Score")]
+    public ScoreKeeper scoreKeeper;
+    [SerializeField] int points = 10;
+
     void Start()
     {
+        scoreKeeper = GameObject.FindGameObjectWithTag("scoreKeeper").GetComponent<ScoreKeeper>();
         initPos = transform.position; //store initial position
         rb.velocity = transform.up * -speed; //apply velocity downwards at speed
     }
@@ -60,6 +64,7 @@ public class Bullet : MonoBehaviour
             Instantiate(brickParticle, other.transform.position, Quaternion.Euler(-270, 0, 0));
             Destroy(other.gameObject); //destroy brick
             FindObjectOfType<AudioManager>().Play("sBrick");
+            scoreKeeper.addScore(points);
             Destroy(gameObject); //destroy bullet
         }
         else if(other.gameObject.tag == "Ground") //if bullet hits the ground

@@ -57,7 +57,10 @@ public class MoveBeat : MonoBehaviour
             transform.position = Vector2.Lerp(spawnPoint, beatCenter.transform.position, (conductor.songPositionInBeats - beatSpawnSongBeat) / beatAmount.beatsDisplay);
 
             if (transform.position == targetPoint) //Once the beat is at the center, destory the beat
+            {
+                FindObjectOfType<AudioManager>().Play("sBeat");
                 Destroy(gameObject);
+            }
         }
         
     }

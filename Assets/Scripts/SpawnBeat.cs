@@ -33,6 +33,7 @@ public class SpawnBeat : MonoBehaviour
             //tried to make the beats children of each spawner but they dont appear infront of the canvas or sometimes have buggy spawns
             Instantiate(beat, beatSpawnerRight.transform.position, transform.rotation, canvas.transform);
             Instantiate(beat, beatSpawnerLeft.transform.position, transform.rotation, canvas.transform);
+
         }
     }
 }

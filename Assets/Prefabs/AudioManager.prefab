@@ -92,3 +92,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 06e8e842456608842960eec64142d35a, type: 3}
     volume: 0.8
     source: {fileID: 0}
+  - name: sBeat
+    clip: {fileID: 8300000, guid: 2d3c2bb7af4a6cc47a2fea124cb28bc7, type: 3}
+    volume: 0.85
+    source: {fileID: 0}

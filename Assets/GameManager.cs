@@ -118,4 +118,9 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("Menu");
     }
 
+    public void LoadInstructions()
+    {
+        SceneManager.LoadScene("Instructions");
+    }
+
 }

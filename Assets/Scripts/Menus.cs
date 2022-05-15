@@ -14,6 +14,7 @@ public class Menus : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("sSelect");
         FindObjectOfType<GameManager>().LoadMenu(); //call load menu function in GameManager
     }
+
     public void Quit()
     {
         Application.Quit(); //quit application

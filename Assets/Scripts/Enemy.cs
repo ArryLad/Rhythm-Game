@@ -28,6 +28,7 @@ public class Enemy : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>(); //get player component from player
         sprite = gameObject.GetComponentInParent(typeof(SpriteRenderer)) as SpriteRenderer; //get parent sprite renderer
+        scoreKeeper = GameObject.FindGameObjectWithTag("scoreKeeper").GetComponent<ScoreKeeper>(); //get score component from scoreKeeper
         regularColor = sprite.color; //get colour of sprite
     }
 
@@ -45,7 +46,7 @@ public class Enemy : MonoBehaviour
     {
         player.Heal(); //heal player from enemy death
         // CALL FUNCTION ADD SCORE * MULITPLIER TO TOTAL SCORE
-        scoreKeeper.addScore(points);
+        scoreKeeper.addScoreCombo(points);
         Instantiate(deathParticle, transform.position, Quaternion.identity); //instantiate death particle
         FindObjectOfType<AudioManager>().Play("sEnemyDeath");
         Destroy(transform.parent.gameObject); //destroy parent 

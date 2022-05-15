@@ -20,6 +20,17 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(ExToLoad); //load experimental level
     }
 
+    public void Instructions()
+    {
+        FindObjectOfType<AudioManager>().Play("sSelect");
+        SceneManager.LoadScene("Instructions"); //load instructions
+    }
+
+    public void Menu()
+    {
+        FindObjectOfType<AudioManager>().Play("sSelect");
+        SceneManager.LoadScene("Menu"); //load menu
+    }
     public void Quit()
     {
         FindObjectOfType<AudioManager>().Play("sSelect");

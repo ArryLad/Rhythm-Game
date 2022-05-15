@@ -290,6 +290,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -126.79999
       objectReference: {fileID: 0}
+    - target: {fileID: 854234849591787446, guid: ac5fdac21831fb44fac08de4c5ebea72, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 125
+      objectReference: {fileID: 0}
     - target: {fileID: 854234849671060067, guid: ac5fdac21831fb44fac08de4c5ebea72, type: 3}
       propertyPath: m_Name
       value: Menu
@@ -385,6 +389,14 @@ PrefabInstance:
     - target: {fileID: 6319525820864463410, guid: ac5fdac21831fb44fac08de4c5ebea72, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: PlayExperimental
+      objectReference: {fileID: 0}
+    - target: {fileID: 7338080774241071134, guid: ac5fdac21831fb44fac08de4c5ebea72, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7740353978676491543, guid: ac5fdac21831fb44fac08de4c5ebea72, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -75
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}

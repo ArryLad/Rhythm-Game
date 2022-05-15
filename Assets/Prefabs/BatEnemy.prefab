@@ -147,6 +147,9 @@ MonoBehaviour:
   moveSpeed: 5
   movement: {x: 0, y: 0}
   isActive: 0
+  dropGrav: 4
+  dropDuration: 0.4
+  hasDropped: 0
   inCamera: {fileID: 0}
 --- !u!114 &1820618424542145262
 MonoBehaviour:
@@ -268,3 +271,4 @@ MonoBehaviour:
   canGetShot: 1
   deathParticle: {fileID: 3218823720574685591, guid: 127db449d4bc17a41868ec117be9a5cf, type: 3}
   player: {fileID: 0}
+  scoreKeeper: {fileID: 0}

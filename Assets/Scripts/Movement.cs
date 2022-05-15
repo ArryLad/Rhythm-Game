@@ -63,7 +63,11 @@ public class Movement : MonoBehaviour
 
     [Header("Shoot Movement")]
     [SerializeField] private float bulletForce = 4f; //the force shooting a applies 
-    [SerializeField] private float stallForce = 1.5f; ////the force shooting when empty applies 
+    [SerializeField] private float stallForce = 1.5f; //the force shooting when empty applies
+                                                    
+    [Header("Score")]
+    public ScoreKeeper scoreKeeper;
+    [SerializeField] int points = 10;
 
     private void Start()
     {
@@ -71,6 +75,7 @@ public class Movement : MonoBehaviour
         lastYPos = 0; //initialise last position to 0
         ammoBar = GameObject.FindGameObjectWithTag("AmmoBar").GetComponent<AmmoBar>();
         conductor = GameObject.FindGameObjectWithTag("Conductor").GetComponent<Conductor>();
+        scoreKeeper = GameObject.FindGameObjectWithTag("scoreKeeper").GetComponent<ScoreKeeper>(); //get score component from scoreKeeper
         Reload(); //reload at the start to ensure ammo and UI are updated
     }
 
@@ -106,6 +111,7 @@ public class Movement : MonoBehaviour
         {
             Reload(); //reload boots 
             ApplyGroundLinearDrag(); //apply ground drag
+            scoreKeeper.combo = 0;
         }
         else //while airborne
         {
@@ -273,6 +279,7 @@ public class Movement : MonoBehaviour
                 Instantiate(brickParticle, hit.transform.gameObject.transform.position, Quaternion.Euler(-270, 0, 0));
                 Destroy(hit.transform.gameObject);
                 FindObjectOfType<AudioManager>().Play("sBrick");
+                scoreKeeper.addScore(points);
             }
             else if (hit.transform.tag == "Ground")
             {

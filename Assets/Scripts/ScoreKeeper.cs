@@ -45,28 +45,33 @@ public class ScoreKeeper : MonoBehaviour
     }
     public void SetScore()
     {
+        //Display the current score
         scoreText.text = "| "+ score +" |";
     }
 
     public void SetMultiplier()
     {
+        //Display the current multiplier
         multiplerText.text = "X" + multiplier;
     }
 
     public void addScoreCombo(int points)
     {
+        //increase combo and add score gained to the total (for enemies)
         combo++;
         score = score + (points * multiplier);
         SetScore();
     }
     public void addScore(int points)
     {
+        //add score gained to the total (for bricks)
         score = score + (points * multiplier);
         SetScore();
     }
 
     public void DisplayScore()
     {
+        //Display score on victory and game over screens
         LoseScoreText.text = "Score: " + score;
         WinScoreText.text = "Score: " + score;
     }

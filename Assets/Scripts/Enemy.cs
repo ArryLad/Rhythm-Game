@@ -45,8 +45,7 @@ public class Enemy : MonoBehaviour
     public void Death()
     {
         player.Heal(); //heal player from enemy death
-        // CALL FUNCTION ADD SCORE * MULITPLIER TO TOTAL SCORE
-        scoreKeeper.addScoreCombo(points);
+        scoreKeeper.addScoreCombo(points); //increase score & combo from killing enemy
         Instantiate(deathParticle, transform.position, Quaternion.identity); //instantiate death particle
         FindObjectOfType<AudioManager>().Play("sEnemyDeath");
         Destroy(transform.parent.gameObject); //destroy parent 

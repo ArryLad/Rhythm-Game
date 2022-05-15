@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2965230398899865594
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2965230398899865592}
+  - component: {fileID: 2965230398899865593}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2965230398899865592
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2965230398899865594}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2965230398899865593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2965230398899865594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77e75a91e864b48438998bc1a021c89e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: sJump
+    clip: {fileID: 8300000, guid: 09debd0751cdd4043997584767ad820b, type: 3}
+    volume: 0.8
+    source: {fileID: 0}
+  - name: sLand
+    clip: {fileID: 8300000, guid: 6ab0183256594334983a9b95555ef094, type: 3}
+    volume: 0.8
+    source: {fileID: 0}
+  - name: sShoot
+    clip: {fileID: 8300000, guid: e4b72cc124b637d488e6139e976fe749, type: 3}
+    volume: 0.8
+    source: {fileID: 0}
+  - name: sShootHit
+    clip: {fileID: 8300000, guid: 898ab77416ffeb449a8fc72839115b18, type: 3}
+    volume: 0.8
+    source: {fileID: 0}
+  - name: sShellMiss
+    clip: {fileID: 8300000, guid: 35aff92eabc08f54c8680781699f8a65, type: 3}
+    volume: 0.8
+    source: {fileID: 0}
+  - name: sBrick
+    clip: {fileID: 8300000, guid: 41c7615d74e07864689af538a4433989, type: 3}
+    volume: 0.8
+    source: {fileID: 0}
+  - name: sReload
+    clip: {fileID: 8300000, guid: 7bed9675290dd514f8d5e6c21b168653, type: 3}
+    volume: 0.8
+    source: {fileID: 0}
+  - name: sHurt
+    clip: {fileID: 8300000, guid: 3f03b46a323beba4482000d6febfe8ea, type: 3}
+    volume: 0.8
+    source: {fileID: 0}
+  - name: sSelect
+    clip: {fileID: 8300000, guid: 0419df181cdd6f24882e1a526f778a80, type: 3}
+    volume: 1
+    source: {fileID: 0}
+  - name: sGameOver
+    clip: {fileID: 8300000, guid: fee5ceb54cac85d4abd40795c5f34516, type: 3}
+    volume: 1
+    source: {fileID: 0}
+  - name: sVictory
+    clip: {fileID: 8300000, guid: ecc87e7fe5c1f474daac5cc9a431a99f, type: 3}
+    volume: 1
+    source: {fileID: 0}
+  - name: sEnemyDeath
+    clip: {fileID: 8300000, guid: 06e8e842456608842960eec64142d35a, type: 3}
+    volume: 0.8
+    source: {fileID: 0}

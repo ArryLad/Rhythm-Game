@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//Expat Studios (2020) 2D Retro Platformer Tutorial - Unity - pt.6 (Game Manager & clean up) [Online Video] [Access Date: 4th May 2022] https://youtu.be/LxdH7AZpLLo
+
 public class GameManager : MonoBehaviour
 {
     [Header("Conductor")]

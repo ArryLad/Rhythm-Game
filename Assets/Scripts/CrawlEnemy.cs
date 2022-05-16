@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Yuro2D (2020) Enemy Crawl Around Platform | Unity 2D Tutorial [Online Video] [Access Date: 26th April 2022] https://www.youtube.com/watch?v=dCE7p2yabmQ
 public class CrawlEnemy : MonoBehaviour
 {
     [Header("LayerMask")]

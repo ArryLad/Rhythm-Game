@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+//Brackeys (2020) How to make a HEALTH BAR in Unity! [Online Video] [Access Date: 27th April 2022] https://youtu.be/BLfNP4Sc_iA
 public class HealthBar : MonoBehaviour
 {
     //Health UI uses a slider

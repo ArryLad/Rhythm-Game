@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Brilliant Labs / Labos Créatifs (2020) Creating A Frog Enemy | Unity 2D Platformer Tutorial Part 5 [Online Video] [Access Date: 26th April 2022] https://youtu.be/1e-9Zbam_s0 
 public class frogController : MonoBehaviour
 {
     [Header("Layer Mask")]

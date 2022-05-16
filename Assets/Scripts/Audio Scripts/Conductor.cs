@@ -2,11 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Tattersall, G. (2019) Coding to the Beat - Under the Hood of a Rhythm Game in Unity. [Online] Game Developer. [Access Date: 22nd April 2022] https://www.gamedeveloper.com/audio/coding-to-the-beat---under-the-hood-of-a-rhythm-game-in-unity
+
 public class Conductor : MonoBehaviour
 {
-    //Majority of this code comes from an article giving a detailed explaination of
-    //how it works which will be referenced in the dissertation
-
     [Header("GameManager")]
     public GameManager GM;
 

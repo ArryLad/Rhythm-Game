@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Forum Unity. (2021) Interpolating UI Objects to the beat of a song.[Online] [Access Date: 7th May 2022] https://forum.unity.com/threads/interpolating-ui-objects-to-the-beat-of-a-song.1064282/
 public class MoveBeat : MonoBehaviour
 {
     [Header("GameManager")]

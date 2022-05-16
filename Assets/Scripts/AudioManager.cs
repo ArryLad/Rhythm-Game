@@ -2,6 +2,8 @@ using UnityEngine.Audio;
 using System;
 using UnityEngine;
 
+//Brackeys (2017) Introduction to AUDIO in Unity [Online Video] [Access Date: 9th May 2022] ]https://youtu.be/6OT43pvUyfY
+
 public class AudioManager : MonoBehaviour
 {
     //list of sounds

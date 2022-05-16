@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Brackeys (2018) 2D Shooting in Unity (Tutorial) [Online Video] [Access Date: 22nd April 2022] https://youtu.be/wkKsl1Mfp5M
 public class Bullet : MonoBehaviour
 {
     [Header("Bullet")]

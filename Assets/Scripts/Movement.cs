@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
+//Tactical Programmer (2020) 2D Character Movement Tutorial in Unity! [Online Video] [Access Date: 21st April 2022] https://youtu.be/TTKPmPvekUY
+//Brackeys (2018) 2D Shooting in Unity (Tutorial) [Online Video] [Access Date: 22th April 2022] https://youtu.be/wkKsl1Mfp5M
 public class Movement : MonoBehaviour
 {
     [Header("AmmoBar")]
